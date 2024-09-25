@@ -11,29 +11,29 @@
             <h1>Calculator</h1>
             <div class="row"></div>
             <input type="text" name="result" class="result" id="result" value="" placeholder="result" readonly />
-            <input type="button" value="+" onclickd="setScreenvalue(+)"/>
-            <input type="button" value="1" onclick="setScreenvalue(1)"/>
-            <input type="button" value="2" onclick="setScreenvalue(2)"/>
-            <input type="button" value="3" onclick="setScreenvalue(3)"/>
-            <input type="button" value="-" onclick="setScreenvalue(-)"/>
+            <input type="button" value="+" onclick="setScreenvalue('+')"/>
+            <input type="button" value="1" onclick="setScreenvalue('1')"/>
+            <input type="button" value="2" onclick="setScreenvalue('2')"/>
+            <input type="button" value="3" onclick="setScreenvalue('3')"/>
+            <input type="button" value="-" onclick="setScreenvalue('-')"/>
         </div>
         <div class="row">
-            <input type="button" value="4" onclick="setScreenvalue(4)"/>
-            <input type="button" value="5" onclick="setScreenvalue(5)"/>
-            <input type="button" value="6" onclick="setScreenvalue(6)"/>
-            <input type="button" value="x" onclick="setScreenvalue(*)"/>
+            <input type="button" value="4" onclick="setScreenvalue('4')" />
+            <input type="button" value="5" onclick="setScreenvalue('5')" />
+            <input type="button" value="6" onclick="setScreenvalue('6')" />
+            <input type="button" value="x" onclick="setScreenvalue('*')" />
         </div>
         <div class="row">
-            <input type="button" value="7" onclick="setScreenvalue(7)"/>
-            <input type="button" value="8" onclick="setScreenvalue(8)"/>
-            <input type="button" value="9" onclick="setScreenvalue(9)"/>
-            <input type="button" value="/" onclick="setScreenvalue(/)"/>
+            <input type="button" value="7" onclick="setScreenvalue('7')" />
+            <input type="button" value="8" onclick="setScreenvalue('8')" />
+            <input type="button" value="9" onclick="setScreenvalue('9')"/>
+            <input type="button" value="/" onclick="setScreenvalue('/')"/>
         </div>
         <div class="row">
-            <input type="button" value="%" onclick="setScreenvalue(%)"/>
-            <input type="button" value="0" onclick="setScreenvalue(0)"/>
+            <input type="button" value="%" onclick="setScreenvalue('%')"/>
+            <input type="button" value="0" onclick="setScreenvalue('0')"/>
             <input type="button" value="." class="dot" onclick="setScreenvalue('.')"/>
-            <input type="button" value="=" onclick="calculatorResult()" />
+            <input type="button" value="=" onclick="calculateResult()" />
         </div>
         <div class="row">
             <input type="button" value="CLEAR" onclick="clearScreen()" id="clear" class="clear-button"/>
@@ -41,6 +41,6 @@
         </div>
     </div>
 
-    <script scr="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
